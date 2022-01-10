@@ -27,6 +27,11 @@ export class BackendService {
         const resp = this.http.get<ITree>(url);
         return firstValueFrom(resp);
     }
+
+    public buyTree(tree: ITree) {
+        const url = `${BASE_URL}/${tree.type}/${tree.id}/buy`
+        return firstValueFrom(this.http.post<ITree>(url, {}));
+    }
 }
 
 export interface ITree {
