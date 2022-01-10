@@ -22,6 +22,6 @@ export class SaleFormComponent implements OnInit {
   }
 
   onSubmit() {
-
+    this.router.navigate(['paypal'])
   }
 }

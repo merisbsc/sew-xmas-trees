@@ -16,6 +16,7 @@ import { TreeDisplayComponent } from './tree/tree-display/tree-display.component
 import { SaleComponent } from './sale/sale.component';
 import { SaleFormComponent } from './sale-form/sale-form.component';
 import {ReactiveFormsModule} from "@angular/forms";
+import { PaypalComponent } from './paypal/paypal.component';
 
 @NgModule({
   declarations: [
@@ -26,7 +27,8 @@ import {ReactiveFormsModule} from "@angular/forms";
     TreeListComponent,
     TreeDisplayComponent,
     SaleComponent,
-    SaleFormComponent
+    SaleFormComponent,
+    PaypalComponent
   ],
     imports: [
         BrowserModule,

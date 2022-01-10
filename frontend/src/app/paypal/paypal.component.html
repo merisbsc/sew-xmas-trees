@@ -1,0 +1,13 @@
+<form [formGroup]="paypal" (ngSubmit)="onSubmit()">
+    <mat-form-field>
+        <mat-label>Email-Adresse</mat-label>
+        <input type="email" placeholder="email">
+    </mat-form-field>
+    <mat-form-field>
+        <mat-label>Passwort</mat-label>
+        <input type="password" placeholder="password">
+    </mat-form-field>
+    <mat-card-actions>
+        <button mat-raised-button color="primary" type="submit" [disabled]="paypal.invalid">Submit</button>
+    </mat-card-actions>
+</form>
