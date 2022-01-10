@@ -14,6 +14,8 @@ import {MatSelectModule} from "@angular/material/select";
 import { TreeListComponent } from './tree/tree-list/tree-list.component';
 import { TreeDisplayComponent } from './tree/tree-display/tree-display.component';
 import { SaleComponent } from './sale/sale.component';
+import { SaleFormComponent } from './sale-form/sale-form.component';
+import {ReactiveFormsModule} from "@angular/forms";
 
 @NgModule({
   declarations: [
@@ -23,7 +25,8 @@ import { SaleComponent } from './sale/sale.component';
     TypeSelectionComponent,
     TreeListComponent,
     TreeDisplayComponent,
-    SaleComponent
+    SaleComponent,
+    SaleFormComponent
   ],
     imports: [
         BrowserModule,
@@ -32,7 +35,8 @@ import { SaleComponent } from './sale/sale.component';
         MatCardModule,
         MatButtonModule,
         HttpClientModule,
-        MatSelectModule
+        MatSelectModule,
+        ReactiveFormsModule
     ],
   providers: [],
   bootstrap: [AppComponent]
